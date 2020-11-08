@@ -4,7 +4,7 @@ import os
 import random
 
 WIN_WIDTH=500
-WIN_HEIGHT=700 #ALL CONSTANTS HERE ARE WRITTEN IN CONSTANTS
+WIN_HEIGHT=700 #ALL CONSTANTS HERE ARE WRITTEN IN CAPITALS
 
 BIRD_IMGS=[pygame.transform.scale2x(pygame.image.load(os.path.join("imgs","bird1.png"))),pygame.transform.scale2x(pygame.image.load(os.path.join("imgs","bird2.png"))),pygame.transform.scale2x(pygame.image.load(os.path.join("imgs","bird3.png")))]
 PIPE_IMG=pygame.transform.scale2x(pygame.image.load(os.path.join("imgs","pipe.png")))
@@ -95,7 +95,7 @@ class Pipe:
 		self.set_height()
 
 	def set_height(self):
-		self.height=random.randrange(50,450)
+		self.height=random.randrange(50,350)
 		self.top=self.height-self.PIPE_TOP.get_height()
 		self.bottom=self.height+self.GAP
 
